@@ -2213,7 +2213,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 91.1352 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -2734,7 +2734,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 84.7852 72.39 0)
 			(hide yes)
 			(show_name no)
