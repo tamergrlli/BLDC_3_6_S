@@ -69,7 +69,7 @@ to be downloaded separately — see [bldc_lib/3dmodels/README.md](bldc_lib/3dmod
 - [ ] Finish routing (MCU analog inputs, PWM pull-downs, SPI flash, SWD, remaining GND / 3.3 V connections)
 - [ ] Route each high-side gate trace together with its phase (SH) return to shrink the gate loop
 - [ ] Connect the SEPIC MOSFET snubber
-- [ ] Sync capacitor footprints between schematic and PCB (C28, C75, C77, C78, C80, C81 and C23, C24)
+- [x] Sync capacitor footprints between schematic and PCB (C28, C75, C77, C78, C80, C81 and C23, C24)
 - [ ] Clear the remaining ERC / DRC warnings
 - [ ] Review copper weight (1 oz vs 2 oz) for continuous high-current operation
 - [ ] Add an NTC next to the power stage for thermal protection
