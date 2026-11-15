@@ -20,9 +20,11 @@ over-current trip.
 | Gate driver | TI DRV8300, 12 V gate drive, separate turn-on / turn-off gate resistors |
 | Current sense | 1 mΩ single DC-link shunt + INA181 (bus current, not per-phase), TLV7011 comparator wired to TIM1_BRK for a fast hardware over-current trip, 1.8 V reference (MCP1700) |
 | Sensorless feedback | Per-phase back-EMF dividers with RC filter and BAT54S clamps, virtual neutral, DC-bus voltage sense |
-| MCU | STM32F103R8T6, 8 MHz crystal, SWD header, 32 Mbit SPI flash (W25Q32JV) |
+| MCU | STM32F103R8T6, 8 MHz crystal, 5-pin SWD header with NRST, 32 Mbit SPI flash (W25Q32JV) |
 | Supplies | SEPIC (LM5022) → 12 V gate drive, TPS54302 buck → 5 V, AP2112K → 3.3 V |
 | Communication | CAN (TJA1042) on a Molex Micro-Fit 3.0 connector, jumper-selectable 120 Ω termination |
+| User I/O | UART debug header (USART3, JST-EH), speed potentiometer, external 0–5 V analog speed input with a 5 V supply pin, 3 status LEDs, 2 push-buttons with RC debounce |
+| Monitoring & debug | 12 V gate-drive rail sense, 17 test points (supply rails, BEMF, neutral, current sense, over-current trip, SPI) |
 | PCB | 4 layers, 1 oz copper, 90 × 70 mm, solder-wire pads for battery (4 mm²) and motor phases (2.5 mm²) |
 
 **Why a SEPIC?** The gate driver needs a stable 12 V rail, but a 3S pack can sag
@@ -57,11 +59,9 @@ to be downloaded separately — see [bldc_lib/3dmodels/README.md](bldc_lib/3dmod
 
 ## Planned hardware additions
 
-- UART header for debugging and live data logging
-- Potentiometer input for speed control
-- External speed-command connector (for an external controller / throttle)
-- Status LEDs
-- Control push-buttons
+- NTC next to the low-side MOSFETs for thermal protection
+- ESD protection on the CAN bus
+- RC-PWM (servo-style) speed input on a timer-capable pin, alongside the analog input
 
 ## Known issues / TODO
 
@@ -72,11 +72,12 @@ to be downloaded separately — see [bldc_lib/3dmodels/README.md](bldc_lib/3dmod
 - [x] Sync capacitor footprints between schematic and PCB (C28, C75, C77, C78, C80, C81 and C23, C24)
 - [ ] Clear the remaining ERC / DRC warnings
 - [ ] Review copper weight (1 oz vs 2 oz) for continuous high-current operation
+- [x] Add UART, speed inputs, status LEDs, push-buttons, 12 V rail sense and test points
 - [ ] Add an NTC next to the power stage for thermal protection
 
 ## Roadmap
 
-1. Add the planned hardware, complete layout, clean ERC / DRC
+1. Finish the remaining hardware additions, complete layout, clean ERC / DRC
 2. First prototype and bring-up
 3. Firmware: sensorless six-step commutation with BEMF zero-crossing detection
 4. Characterisation: current capability, thermals, efficiency
