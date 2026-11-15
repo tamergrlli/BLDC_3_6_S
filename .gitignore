@@ -1,0 +1,28 @@
+# --- KiCad backups, autosaves and local state ---
+*-backups/
+_autosave-*
+*.lck
+*.kicad_prl
+fp-info-cache
+*.bak
+*~
+\#auto_saved_files#
+
+# --- Vendor 3D models (download them yourself, see bldc_lib/3dmodels/README.md) ---
+bldc_lib/3dmodels/*
+!bldc_lib/3dmodels/README.md
+
+# --- Not part of the hardware release ---
+bldcsim/
+bldccalc/
+/ina181-q1.pdf
+
+# --- Fabrication outputs (attach to GitHub Releases instead) ---
+*-gerbers/
+gerber/
+*.zip
+
+# --- OS clutter ---
+Thumbs.db
+desktop.ini
+.DS_Store

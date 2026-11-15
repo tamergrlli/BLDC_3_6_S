@@ -18,7 +18,7 @@ over-current trip.
 | Input | 3S–6S Li-ion (≈ 9–25.2 V), SMBJ33CA TVS, polyfuse + Schottky reverse protection for the auxiliary supply |
 | Power stage | 6 × TI CSD18540Q5B (60 V, SON 5×6), 2 × 22 µF ceramic per half-bridge, 2 × 330 µF bulk at the input |
 | Gate driver | TI DRV8300, 12 V gate drive, separate turn-on / turn-off gate resistors |
-| Current sense | 1 mΩ single shunt + INA181, TLV7011 comparator wired to TIM1_BRK for a fast hardware over-current trip, 1.8 V reference (MCP1700) |
+| Current sense | 1 mΩ single DC-link shunt + INA181 (bus current, not per-phase), TLV7011 comparator wired to TIM1_BRK for a fast hardware over-current trip, 1.8 V reference (MCP1700) |
 | Sensorless feedback | Per-phase back-EMF dividers with RC filter and BAT54S clamps, virtual neutral, DC-bus voltage sense |
 | MCU | STM32F103R8T6, 8 MHz crystal, SWD header, 32 Mbit SPI flash (W25Q32JV) |
 | Supplies | SEPIC (LM5022) → 12 V gate drive, TPS54302 buck → 5 V, AP2112K → 3.3 V |
@@ -55,24 +55,36 @@ All project libraries are referenced relative to the project
 KiCad 10 and its standard libraries. Only the J4 connector's vendor 3D model has
 to be downloaded separately — see [bldc_lib/3dmodels/README.md](bldc_lib/3dmodels/README.md).
 
+## Planned hardware additions
+
+- UART header for debugging and live data logging
+- Potentiometer input for speed control
+- External speed-command connector (for an external controller / throttle)
+- Status LEDs
+- Control push-buttons
+
 ## Known issues / TODO
 
+- [x] Move the 5 V buck switch node off the inner layer onto the top layer
 - [ ] Finish routing (MCU analog inputs, PWM pull-downs, SPI flash, SWD, remaining GND / 3.3 V connections)
 - [ ] Route each high-side gate trace together with its phase (SH) return to shrink the gate loop
-- [ ] Move the 5 V buck switch node off the inner layer onto the top layer
 - [ ] Connect the SEPIC MOSFET snubber
-- [ ] Sync six DC-link capacitor footprints between schematic and PCB (1206 → 1210)
+- [ ] Sync capacitor footprints between schematic and PCB (C28, C75, C77, C78, C80, C81 and C23, C24)
 - [ ] Clear the remaining ERC / DRC warnings
 - [ ] Review copper weight (1 oz vs 2 oz) for continuous high-current operation
 - [ ] Add an NTC next to the power stage for thermal protection
 
 ## Roadmap
 
-1. Complete layout, clean ERC / DRC
+1. Add the planned hardware, complete layout, clean ERC / DRC
 2. First prototype and bring-up
 3. Firmware: sensorless six-step commutation with BEMF zero-crossing detection
 4. Characterisation: current capability, thermals, efficiency
-5. Later: field-oriented control (FOC)
+
+The board measures DC-link current only, so it is aimed at six-step control.
+Field-oriented control would need per-phase current: either single-shunt
+phase-current reconstruction (with a faster current-sense amplifier) or a
+future hardware revision with per-phase shunts.
 
 ## Contributing
 
@@ -87,4 +99,3 @@ This hardware design is licensed under the
 See [LICENSE](LICENSE) for the full text.
 
 Copyright © 2026 tamergrlli
-# BLDC_3_6_S

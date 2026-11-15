@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "bldcders") (type "KiCad") (uri "${KIPRJMOD}/../bldc_lib/symbols/bldcders.kicad_sym") (options "") (descr "DRV8300, TLV7011"))
+)
