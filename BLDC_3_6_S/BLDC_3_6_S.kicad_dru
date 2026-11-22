@@ -1,5 +1,5 @@
 (version 1)
 
-(rule "U4 pin araligi"
-   (condition "A.intersectsCourtyard('U4') && B.intersectsCourtyard('U4')")
+(rule "LM5022 (U9) pin araligi"
+   (condition "A.intersectsCourtyard('U9') && B.intersectsCourtyard('U9')")
    (constraint clearance (min 0.15mm)))

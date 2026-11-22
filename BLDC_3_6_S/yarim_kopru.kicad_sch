@@ -1727,7 +1727,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2f335860-a027-4fae-bd8f-eefb489308a0")
-		(property "Reference" "R37"
+		(property "Reference" "R19"
 			(at 52.07 74.93 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1789,15 +1789,15 @@
 		(instances
 			(project "BLDC_3_6_S"
 				(path "/782cabe4-2779-4489-bbed-3e5874152a2b/1d8313bd-b365-4194-9b0a-ee4b71426a15"
-					(reference "R37")
+					(reference "R19")
 					(unit 1)
 				)
 				(path "/782cabe4-2779-4489-bbed-3e5874152a2b/a4275a3a-11a6-4fe5-a73f-6097ff714b83"
-					(reference "R88")
+					(reference "R55")
 					(unit 1)
 				)
 				(path "/782cabe4-2779-4489-bbed-3e5874152a2b/ba2e8723-67bd-4366-b45b-5113c1fe01be"
-					(reference "R82")
+					(reference "R39")
 					(unit 1)
 				)
 			)
@@ -1814,7 +1814,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "35c405f2-b38a-4840-8f2b-7f4fefddeed8")
-		(property "Reference" "R80"
+		(property "Reference" "R16"
 			(at 63.5 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1876,15 +1876,15 @@
 		(instances
 			(project "BLDC_3_6_S"
 				(path "/782cabe4-2779-4489-bbed-3e5874152a2b/1d8313bd-b365-4194-9b0a-ee4b71426a15"
-					(reference "R80")
+					(reference "R16")
 					(unit 1)
 				)
 				(path "/782cabe4-2779-4489-bbed-3e5874152a2b/a4275a3a-11a6-4fe5-a73f-6097ff714b83"
-					(reference "R92")
+					(reference "R52")
 					(unit 1)
 				)
 				(path "/782cabe4-2779-4489-bbed-3e5874152a2b/ba2e8723-67bd-4366-b45b-5113c1fe01be"
-					(reference "R86")
+					(reference "R38")
 					(unit 1)
 				)
 			)
@@ -1902,7 +1902,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3ae44a25-91c1-41b0-821f-0f9c5bc80c4c")
-		(property "Reference" "Q8"
+		(property "Reference" "Q1"
 			(at 78.74 52.0699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1978,15 +1978,15 @@
 		(instances
 			(project "BLDC_3_6_S"
 				(path "/782cabe4-2779-4489-bbed-3e5874152a2b/1d8313bd-b365-4194-9b0a-ee4b71426a15"
-					(reference "Q8")
+					(reference "Q1")
 					(unit 1)
 				)
 				(path "/782cabe4-2779-4489-bbed-3e5874152a2b/a4275a3a-11a6-4fe5-a73f-6097ff714b83"
-					(reference "Q12")
+					(reference "Q5")
 					(unit 1)
 				)
 				(path "/782cabe4-2779-4489-bbed-3e5874152a2b/ba2e8723-67bd-4366-b45b-5113c1fe01be"
-					(reference "Q10")
+					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -2090,7 +2090,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4462d431-a96e-42a0-bd11-4917cd75e736")
-		(property "Reference" "Q9"
+		(property "Reference" "Q2"
 			(at 78.74 76.1999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2166,15 +2166,15 @@
 		(instances
 			(project "BLDC_3_6_S"
 				(path "/782cabe4-2779-4489-bbed-3e5874152a2b/1d8313bd-b365-4194-9b0a-ee4b71426a15"
-					(reference "Q9")
+					(reference "Q2")
 					(unit 1)
 				)
 				(path "/782cabe4-2779-4489-bbed-3e5874152a2b/a4275a3a-11a6-4fe5-a73f-6097ff714b83"
-					(reference "Q13")
+					(reference "Q6")
 					(unit 1)
 				)
 				(path "/782cabe4-2779-4489-bbed-3e5874152a2b/ba2e8723-67bd-4366-b45b-5113c1fe01be"
-					(reference "Q11")
+					(reference "Q4")
 					(unit 1)
 				)
 			)
@@ -2191,7 +2191,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "48c34fce-b254-4616-82e8-c57119393f32")
-		(property "Reference" "C75"
+		(property "Reference" "C11"
 			(at 91.44 66.04 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2255,15 +2255,15 @@
 		(instances
 			(project "BLDC_3_6_S"
 				(path "/782cabe4-2779-4489-bbed-3e5874152a2b/1d8313bd-b365-4194-9b0a-ee4b71426a15"
-					(reference "C75")
+					(reference "C11")
 					(unit 1)
 				)
 				(path "/782cabe4-2779-4489-bbed-3e5874152a2b/a4275a3a-11a6-4fe5-a73f-6097ff714b83"
-					(reference "C81")
+					(reference "C42")
 					(unit 1)
 				)
 				(path "/782cabe4-2779-4489-bbed-3e5874152a2b/ba2e8723-67bd-4366-b45b-5113c1fe01be"
-					(reference "C78")
+					(reference "C27")
 					(unit 1)
 				)
 			)
@@ -2281,7 +2281,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "58380a1f-9667-4828-aab4-6b19276d35dc")
-		(property "Reference" "J9"
+		(property "Reference" "J5"
 			(at 57.785 26.67 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2340,15 +2340,15 @@
 		(instances
 			(project "BLDC_3_6_S"
 				(path "/782cabe4-2779-4489-bbed-3e5874152a2b/1d8313bd-b365-4194-9b0a-ee4b71426a15"
-					(reference "J9")
+					(reference "J5")
 					(unit 1)
 				)
 				(path "/782cabe4-2779-4489-bbed-3e5874152a2b/a4275a3a-11a6-4fe5-a73f-6097ff714b83"
-					(reference "J11")
+					(reference "J9")
 					(unit 1)
 				)
 				(path "/782cabe4-2779-4489-bbed-3e5874152a2b/ba2e8723-67bd-4366-b45b-5113c1fe01be"
-					(reference "J10")
+					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -2365,7 +2365,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "732e01e5-8707-4832-b50e-b999e69c3dc3")
-		(property "Reference" "R79"
+		(property "Reference" "R7"
 			(at 63.5 55.88 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2427,15 +2427,15 @@
 		(instances
 			(project "BLDC_3_6_S"
 				(path "/782cabe4-2779-4489-bbed-3e5874152a2b/1d8313bd-b365-4194-9b0a-ee4b71426a15"
-					(reference "R79")
+					(reference "R7")
 					(unit 1)
 				)
 				(path "/782cabe4-2779-4489-bbed-3e5874152a2b/a4275a3a-11a6-4fe5-a73f-6097ff714b83"
-					(reference "R91")
+					(reference "R43")
 					(unit 1)
 				)
 				(path "/782cabe4-2779-4489-bbed-3e5874152a2b/ba2e8723-67bd-4366-b45b-5113c1fe01be"
-					(reference "R85")
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -2452,7 +2452,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9020e4cf-8ab9-496d-a487-a922ab366ddc")
-		(property "Reference" "R78"
+		(property "Reference" "R20"
 			(at 63.5 74.93 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2514,15 +2514,15 @@
 		(instances
 			(project "BLDC_3_6_S"
 				(path "/782cabe4-2779-4489-bbed-3e5874152a2b/1d8313bd-b365-4194-9b0a-ee4b71426a15"
-					(reference "R78")
+					(reference "R20")
 					(unit 1)
 				)
 				(path "/782cabe4-2779-4489-bbed-3e5874152a2b/a4275a3a-11a6-4fe5-a73f-6097ff714b83"
-					(reference "R90")
+					(reference "R56")
 					(unit 1)
 				)
 				(path "/782cabe4-2779-4489-bbed-3e5874152a2b/ba2e8723-67bd-4366-b45b-5113c1fe01be"
-					(reference "R84")
+					(reference "R40")
 					(unit 1)
 				)
 			)
@@ -2625,7 +2625,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bc47212c-96d6-47bc-bd92-9658d5886560")
-		(property "Reference" "R34"
+		(property "Reference" "R5"
 			(at 52.07 50.8 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2687,15 +2687,15 @@
 		(instances
 			(project "BLDC_3_6_S"
 				(path "/782cabe4-2779-4489-bbed-3e5874152a2b/1d8313bd-b365-4194-9b0a-ee4b71426a15"
-					(reference "R34")
+					(reference "R5")
 					(unit 1)
 				)
 				(path "/782cabe4-2779-4489-bbed-3e5874152a2b/a4275a3a-11a6-4fe5-a73f-6097ff714b83"
-					(reference "R87")
+					(reference "R41")
 					(unit 1)
 				)
 				(path "/782cabe4-2779-4489-bbed-3e5874152a2b/ba2e8723-67bd-4366-b45b-5113c1fe01be"
-					(reference "R81")
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -2712,7 +2712,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bed87727-63df-475b-9fd6-8ac6e1f9c6e0")
-		(property "Reference" "C28"
+		(property "Reference" "C12"
 			(at 85.09 66.04 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2776,15 +2776,15 @@
 		(instances
 			(project "BLDC_3_6_S"
 				(path "/782cabe4-2779-4489-bbed-3e5874152a2b/1d8313bd-b365-4194-9b0a-ee4b71426a15"
-					(reference "C28")
+					(reference "C12")
 					(unit 1)
 				)
 				(path "/782cabe4-2779-4489-bbed-3e5874152a2b/a4275a3a-11a6-4fe5-a73f-6097ff714b83"
-					(reference "C80")
+					(reference "C43")
 					(unit 1)
 				)
 				(path "/782cabe4-2779-4489-bbed-3e5874152a2b/ba2e8723-67bd-4366-b45b-5113c1fe01be"
-					(reference "C77")
+					(reference "C28")
 					(unit 1)
 				)
 			)
@@ -2801,7 +2801,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cb14110f-094a-44cd-a20b-b495671f04f2")
-		(property "Reference" "D18"
+		(property "Reference" "D14"
 			(at 46.99 43.18 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2885,15 +2885,15 @@
 		(instances
 			(project "BLDC_3_6_S"
 				(path "/782cabe4-2779-4489-bbed-3e5874152a2b/1d8313bd-b365-4194-9b0a-ee4b71426a15"
-					(reference "D18")
+					(reference "D14")
 					(unit 1)
 				)
 				(path "/782cabe4-2779-4489-bbed-3e5874152a2b/a4275a3a-11a6-4fe5-a73f-6097ff714b83"
-					(reference "D22")
+					(reference "D18")
 					(unit 1)
 				)
 				(path "/782cabe4-2779-4489-bbed-3e5874152a2b/ba2e8723-67bd-4366-b45b-5113c1fe01be"
-					(reference "D20")
+					(reference "D16")
 					(unit 1)
 				)
 			)
@@ -2910,7 +2910,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d0bde7d3-16f6-4ca1-9361-4728998e6083")
-		(property "Reference" "R47"
+		(property "Reference" "R6"
 			(at 63.5 50.8 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2972,15 +2972,15 @@
 		(instances
 			(project "BLDC_3_6_S"
 				(path "/782cabe4-2779-4489-bbed-3e5874152a2b/1d8313bd-b365-4194-9b0a-ee4b71426a15"
-					(reference "R47")
+					(reference "R6")
 					(unit 1)
 				)
 				(path "/782cabe4-2779-4489-bbed-3e5874152a2b/a4275a3a-11a6-4fe5-a73f-6097ff714b83"
-					(reference "R89")
+					(reference "R42")
 					(unit 1)
 				)
 				(path "/782cabe4-2779-4489-bbed-3e5874152a2b/ba2e8723-67bd-4366-b45b-5113c1fe01be"
-					(reference "R83")
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -2997,7 +2997,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f16c5bdc-9dfa-419f-80d7-dd2872fb80bf")
-		(property "Reference" "D17"
+		(property "Reference" "D15"
 			(at 45.72 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3081,15 +3081,15 @@
 		(instances
 			(project "BLDC_3_6_S"
 				(path "/782cabe4-2779-4489-bbed-3e5874152a2b/1d8313bd-b365-4194-9b0a-ee4b71426a15"
-					(reference "D17")
+					(reference "D15")
 					(unit 1)
 				)
 				(path "/782cabe4-2779-4489-bbed-3e5874152a2b/a4275a3a-11a6-4fe5-a73f-6097ff714b83"
-					(reference "D21")
+					(reference "D19")
 					(unit 1)
 				)
 				(path "/782cabe4-2779-4489-bbed-3e5874152a2b/ba2e8723-67bd-4366-b45b-5113c1fe01be"
-					(reference "D19")
+					(reference "D17")
 					(unit 1)
 				)
 			)
@@ -3106,7 +3106,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "faeca609-4a00-4e34-a435-8583873b84a1")
-		(property "Reference" "C76"
+		(property "Reference" "C71"
 			(at 99.06 66.04 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3170,15 +3170,15 @@
 		(instances
 			(project "BLDC_3_6_S"
 				(path "/782cabe4-2779-4489-bbed-3e5874152a2b/1d8313bd-b365-4194-9b0a-ee4b71426a15"
-					(reference "C76")
+					(reference "C71")
 					(unit 1)
 				)
 				(path "/782cabe4-2779-4489-bbed-3e5874152a2b/a4275a3a-11a6-4fe5-a73f-6097ff714b83"
-					(reference "C82")
+					(reference "C75")
 					(unit 1)
 				)
 				(path "/782cabe4-2779-4489-bbed-3e5874152a2b/ba2e8723-67bd-4366-b45b-5113c1fe01be"
-					(reference "C79")
+					(reference "C74")
 					(unit 1)
 				)
 			)

@@ -7,8 +7,8 @@ designed in KiCad 10. It targets sensorless six-step control using back-EMF
 zero-crossing detection, with a single-shunt current sense and a hardware
 over-current trip.
 
-> **Status: work in progress.** The schematic is complete and the PCB is being
-> routed. The board has **not** been manufactured or tested yet. Do not order
+> **Status: work in progress.** The schematic and PCB layout are complete and
+> DRC-clean; the design is in final review. The board has **not** been manufactured or tested yet. Do not order
 > boards from this revision — see [Known issues](#known-issues--todo).
 
 ## Key features
@@ -57,6 +57,13 @@ All project libraries are referenced relative to the project
 KiCad 10 and its standard libraries. Only the J4 connector's vendor 3D model has
 to be downloaded separately — see [bldc_lib/3dmodels/README.md](bldc_lib/3dmodels/README.md).
 
+## MCU pin notes
+
+- Status LEDs: D1 on PB4, D2 on PB3, D3 on PD2.
+- PB3 and PB4 are JTAG pins after reset. The firmware must disable JTAG and
+  keep SWD only (CubeMX: *SYS → Debug = Serial Wire*), otherwise D1 and D2
+  will not work.
+
 ## Planned hardware additions
 
 - NTC next to the low-side MOSFETs for thermal protection
@@ -66,11 +73,12 @@ to be downloaded separately — see [bldc_lib/3dmodels/README.md](bldc_lib/3dmod
 ## Known issues / TODO
 
 - [x] Move the 5 V buck switch node off the inner layer onto the top layer
-- [ ] Finish routing (MCU analog inputs, PWM pull-downs, SPI flash, SWD, remaining GND / 3.3 V connections)
+- [x] Finish routing (MCU analog inputs, PWM pull-downs, SPI flash, SWD, remaining GND / 3.3 V connections)
 - [ ] Route each high-side gate trace together with its phase (SH) return to shrink the gate loop
 - [ ] Connect the SEPIC MOSFET snubber
 - [x] Sync capacitor footprints between schematic and PCB (C28, C75, C77, C78, C80, C81 and C23, C24)
-- [ ] Clear the remaining ERC / DRC warnings
+- [x] DRC clean (only silkscreen warnings remain)
+- [ ] Clear ERC warnings (no-connect flags on unused MCU pins, PWR_FLAGs)
 - [ ] Review copper weight (1 oz vs 2 oz) for continuous high-current operation
 - [x] Add UART, speed inputs, status LEDs, push-buttons, 12 V rail sense and test points
 - [ ] Add an NTC next to the power stage for thermal protection
